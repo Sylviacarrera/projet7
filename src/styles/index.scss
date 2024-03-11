@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 667px;
+    background-image: url('/assets/lampos-aritonang-24gR_9lCdes-unsplash1.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    nav {
+        position: absolute;
+        top: 35px;
+        left: 69px;
+
+        a {
+            img {
+                height: 26px;
+            }
+        }
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-family: 'Anton';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 66px;
+            text-align: center;
+            color: $yellow;
+            width: 50%;
+        }
+
+        .main-search-bar-container {
+            position: relative;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            .search-bar {
+                width: 80%;
+                height: 72px;
+                border-radius: 11px;
+                background-color: $white;
+                border: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 35px;
+
+                color: $grey;
+                font-family: 'Manrope';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .loop-container {
+                width: 51px;
+                height: 52px;
+                border-radius: 10px;
+                background: $black;
+                position: absolute;
+                top: 10px;
+                right: 9.3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    background: $yellow;
+
+                    svg {
+                        g {
+                            circle {
+                                stroke: $black;
+                            }
+
+                            line {
+                                stroke: $black;
+                            }
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .delete {
+                position: absolute;
+                top: 28px;
+                right: 18%;
+                display: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}
+
+main {
+    background: $lightGrey;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 100vh;
+
+    #dropdown-container {
+        display: flex;
+        padding-top: 17px;
+
+        .dropdown {
+            display: flex;
+            padding: 17px 16px;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 11px;
+            background: $white;
+            margin-right: 66px;
+            position: relative;
+
+            span {
+                color: $black;
+                font-family: "Manrope";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-right: 63px;
+            }
+
+            img {
+                cursor: pointer;
+
+                &.down {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .collapsed {
+                display: none;
+                // width: 164.2px;
+                width: 196.2px;
+                position: absolute;
+                top: 48px;
+                left: 0px;
+                background: $white;
+                // padding-left: 16px;
+                // padding-right: 16px;
+                z-index: 1;
+                border-bottom-left-radius: 11px;
+                border-bottom-right-radius: 11px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &.devices {
+                    width: 180.2px;
+                }
+
+                &.ustensils {
+                    width: 189.2px;
+                }
+
+                .search-bar {
+                    width: 76%;
+                    height: 34px;
+                    border-radius: 2px;
+                    border: 1px solid $lightenGrey;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    // padding-left: 35px;
+
+                    color: $grey;
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+
+                .delete {
+                    position: absolute;
+                    top: 11px;
+                    right: 26%;
+                    display: none;
+                    cursor: pointer;
+                    width: 10px;
+                }
+
+                .loop-container {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background: transparent;
+                    position: absolute;
+                    top: 9px;
+                    right: 13.3%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    svg {
+                        g {
+                            circle {
+                                stroke: $lightenGrey;
+                            }
+
+                            line {
+                                stroke: $lightenGrey;
+                            }
+                        }
+
+                    }
+
+
+
+                }
+
+                .items-container {
+                    margin-top: 14px;
+                    width: 100%;
+
+                    article {
+                        color: $black;
+                        font-family: Manrope;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        // margin-top: 10px;
+                        // margin-bottom: 10px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: $yellow;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #tag-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            margin-top: 21px;
+            margin-right: 10px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 18px;
+            padding-right: 18px;
+            border-radius: 10px;
+            background: $yellow;
+
+            color: $black;
+            font-family: 'Manrope';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                margin-right: 60px;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #recipes-counter {
+        color: $black;
+        font-family: Anton;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        top: 30px;
+        right: 10%;
+    }
+
+    #recipes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .error-message {
+            color: $black;
+            font-family: Anton;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            margin-top: 55px;
+            width: 100%;
+        }
+
+        .card {
+            margin-top: 55px;
+            width: 380px;
+            height: 731px;
+            border-radius: 21px;
+            background: $white;
+            box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+            position: relative;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 253px;
+                border-top-left-radius: 21px;
+                border-top-right-radius: 21px;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                padding: 32px 25px;
+
+                h2 {
+                    color: $black;
+                    font-family: "Anton";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin: 0;
+                }
+
+                .under-title {
+                    color: $grey;
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.08px;
+                    text-transform: uppercase;
+                    margin-top: 29px;
+                }
+
+                p {
+                    color: $black;
+                    font-family: "Manrope";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    max-height: 76px;
+                    text-align: justify;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                }
+
+                .ingredients-container {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    div {
+                        margin-top: 15px;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .ingredient-name {
+                            color: $black;
+                            font-family: "Manrope";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .ingredient-quantity {
+                            color: $grey;
+                            font-family: "Manrope";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+
+            .time {
+                padding: 5px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 14px;
+                background: $yellow;
+                position: absolute;
+                top: 21px;
+                right: 22px;
+                color: $black;
+                text-align: center;
+                font-family: 'Manrope';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+}

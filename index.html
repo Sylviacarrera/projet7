@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les petits plats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Manrope:wght@200..800&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- <img src="./src/assets/lampos-aritonang-24gR_9lCdes-unsplash1.jpg" alt="background les petits plats"> -->
+    <nav>
+      <a class="logo" href="#">
+        <img alt="logo" src="/assets/Logo.png">
+      </a>
+    </nav>
+    <div class="header-title">
+      <h1>CHERCHEZ PARMI PLUS DE 1500 RECETTES
+        DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES</h1>
+      <div class="main-search-bar-container">
+        <input id="main-search-bar" class="search-bar" placeholder="Rechercher une recette, un ingrédient, ..." />
+        <div class="loop-container">
+          <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 4">
+              <circle id="Ellipse 4" cx="10" cy="10.4219" r="9.5" stroke="white" />
+              <line id="Line 2" x1="18.3536" y1="19.0683" x2="27.3536" y2="28.0683" stroke="white" />
+            </g>
+          </svg>
+        </div>
+        <svg class="delete" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="17" height="17" fill="white" />
+          <path
+            d="M-2449 -707C-2449 -708.105 -2448.1 -709 -2447 -709H649C650.104 -709 651 -708.105 651 -707V1375C651 1376.1 650.104 1377 649 1377H-2447C-2448.1 1377 -2449 1376.1 -2449 1375V-707Z"
+            fill="#E5E5E5" />
+          <path
+            d="M-2447 -708H649V-710H-2447V-708ZM650 -707V1375H652V-707H650ZM649 1376H-2447V1378H649V1376ZM-2448 1375V-707H-2450V1375H-2448ZM-2447 1376C-2447.55 1376 -2448 1375.55 -2448 1375H-2450C-2450 1376.66 -2448.66 1378 -2447 1378V1376ZM650 1375C650 1375.55 649.552 1376 649 1376V1378C650.657 1378 652 1376.66 652 1375H650ZM649 -708C649.552 -708 650 -707.552 650 -707H652C652 -708.657 650.657 -710 649 -710V-708ZM-2447 -710C-2448.66 -710 -2450 -708.657 -2450 -707H-2448C-2448 -707.552 -2447.55 -708 -2447 -708V-710Z"
+            fill="black" fill-opacity="0.1" />
+          <rect x="-873.5" y="-233.5" width="993" height="295" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5" />
+          <rect x="-854" y="-30" width="954" height="72" rx="11" fill="white" />
+          <path d="M15 15L8.5 8.5M8.5 8.5L2 2M8.5 8.5L15 2M8.5 8.5L2 15" stroke="#7A7A7A" stroke-width="2.16667"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="dropdown-container">
+      <div id="dropdown-ingredients" class="dropdown">
+        <span>Ingrédients</span>
+        <img src="/assets/arrow.png">
+        <div class="collapsed">
+          <input id="ingredients-search-bar" class="search-bar">
+          <svg class="delete" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="17" height="17" fill="white" />
+            <path
+              d="M-2449 -707C-2449 -708.105 -2448.1 -709 -2447 -709H649C650.104 -709 651 -708.105 651 -707V1375C651 1376.1 650.104 1377 649 1377H-2447C-2448.1 1377 -2449 1376.1 -2449 1375V-707Z"
+              fill="#E5E5E5" />
+            <path
+              d="M-2447 -708H649V-710H-2447V-708ZM650 -707V1375H652V-707H650ZM649 1376H-2447V1378H649V1376ZM-2448 1375V-707H-2450V1375H-2448ZM-2447 1376C-2447.55 1376 -2448 1375.55 -2448 1375H-2450C-2450 1376.66 -2448.66 1378 -2447 1378V1376ZM650 1375C650 1375.55 649.552 1376 649 1376V1378C650.657 1378 652 1376.66 652 1375H650ZM649 -708C649.552 -708 650 -707.552 650 -707H652C652 -708.657 650.657 -710 649 -710V-708ZM-2447 -710C-2448.66 -710 -2450 -708.657 -2450 -707H-2448C-2448 -707.552 -2447.55 -708 -2447 -708V-710Z"
+              fill="black" fill-opacity="0.1" />
+            <rect x="-873.5" y="-233.5" width="993" height="295" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5" />
+            <rect x="-854" y="-30" width="954" height="72" rx="11" fill="white" />
+            <path d="M15 15L8.5 8.5M8.5 8.5L2 2M8.5 8.5L15 2M8.5 8.5L2 15" stroke="#7A7A7A" stroke-width="2.16667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="loop-container">
+            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Group 4">
+                <circle id="Ellipse 4" cx="10" cy="10.4219" r="9.5" stroke="white" />
+                <line id="Line 2" x1="18.3536" y1="19.0683" x2="27.3536" y2="28.0683" stroke="white" />
+              </g>
+            </svg>
+          </div>
+          <section class="items-container">
+          </section>
+        </div>
+      </div>
+      <div id="dropdown-devices" class="dropdown">
+        <span>Appareils</span>
+        <img src="/assets/arrow.png">
+        <div class="collapsed devices">
+          <input id="devices-search-bar" class="search-bar">
+          <svg class="delete" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="17" height="17" fill="white" />
+            <path
+              d="M-2449 -707C-2449 -708.105 -2448.1 -709 -2447 -709H649C650.104 -709 651 -708.105 651 -707V1375C651 1376.1 650.104 1377 649 1377H-2447C-2448.1 1377 -2449 1376.1 -2449 1375V-707Z"
+              fill="#E5E5E5" />
+            <path
+              d="M-2447 -708H649V-710H-2447V-708ZM650 -707V1375H652V-707H650ZM649 1376H-2447V1378H649V1376ZM-2448 1375V-707H-2450V1375H-2448ZM-2447 1376C-2447.55 1376 -2448 1375.55 -2448 1375H-2450C-2450 1376.66 -2448.66 1378 -2447 1378V1376ZM650 1375C650 1375.55 649.552 1376 649 1376V1378C650.657 1378 652 1376.66 652 1375H650ZM649 -708C649.552 -708 650 -707.552 650 -707H652C652 -708.657 650.657 -710 649 -710V-708ZM-2447 -710C-2448.66 -710 -2450 -708.657 -2450 -707H-2448C-2448 -707.552 -2447.55 -708 -2447 -708V-710Z"
+              fill="black" fill-opacity="0.1" />
+            <rect x="-873.5" y="-233.5" width="993" height="295" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5" />
+            <rect x="-854" y="-30" width="954" height="72" rx="11" fill="white" />
+            <path d="M15 15L8.5 8.5M8.5 8.5L2 2M8.5 8.5L15 2M8.5 8.5L2 15" stroke="#7A7A7A" stroke-width="2.16667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="loop-container">
+            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Group 4">
+                <circle id="Ellipse 4" cx="10" cy="10.4219" r="9.5" stroke="white" />
+                <line id="Line 2" x1="18.3536" y1="19.0683" x2="27.3536" y2="28.0683" stroke="white" />
+              </g>
+            </svg>
+          </div>
+          <section class="items-container">
+          </section>
+        </div>
+      </div>
+      <div id="dropdown-ustensils" class="dropdown">
+        <span>Ustensiles</span>
+        <img src="/assets/arrow.png">
+        <div class="collapsed ustensils">
+          <input id="ustensils-search-bar" class="search-bar">
+          <svg class="delete" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="17" height="17" fill="white" />
+            <path
+              d="M-2449 -707C-2449 -708.105 -2448.1 -709 -2447 -709H649C650.104 -709 651 -708.105 651 -707V1375C651 1376.1 650.104 1377 649 1377H-2447C-2448.1 1377 -2449 1376.1 -2449 1375V-707Z"
+              fill="#E5E5E5" />
+            <path
+              d="M-2447 -708H649V-710H-2447V-708ZM650 -707V1375H652V-707H650ZM649 1376H-2447V1378H649V1376ZM-2448 1375V-707H-2450V1375H-2448ZM-2447 1376C-2447.55 1376 -2448 1375.55 -2448 1375H-2450C-2450 1376.66 -2448.66 1378 -2447 1378V1376ZM650 1375C650 1375.55 649.552 1376 649 1376V1378C650.657 1378 652 1376.66 652 1375H650ZM649 -708C649.552 -708 650 -707.552 650 -707H652C652 -708.657 650.657 -710 649 -710V-708ZM-2447 -710C-2448.66 -710 -2450 -708.657 -2450 -707H-2448C-2448 -707.552 -2447.55 -708 -2447 -708V-710Z"
+              fill="black" fill-opacity="0.1" />
+            <rect x="-873.5" y="-233.5" width="993" height="295" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5" />
+            <rect x="-854" y="-30" width="954" height="72" rx="11" fill="white" />
+            <path d="M15 15L8.5 8.5M8.5 8.5L2 2M8.5 8.5L15 2M8.5 8.5L2 15" stroke="#7A7A7A" stroke-width="2.16667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="loop-container">
+            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Group 4">
+                <circle id="Ellipse 4" cx="10" cy="10.4219" r="9.5" stroke="white" />
+                <line id="Line 2" x1="18.3536" y1="19.0683" x2="27.3536" y2="28.0683" stroke="white" />
+              </g>
+            </svg>
+          </div>
+          <section class="items-container">
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="tag-container"></section>
+    <div id="recipes-counter">50 recettes</div>
+    <section id="recipes-container">
+    </section>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
