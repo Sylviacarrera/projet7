@@ -20,16 +20,18 @@ export const getRecipes = (value = '') => {
  */
 export const getIngredients = (main = '', value = '') => {
   const recipes = getRecipes(main)
-  let ingredients = [...new Set(recipes.flatMap(recipe => recipe.ingredients.map(item => item.ingredient.toLowerCase())))]
-  if (value.length >= 3) {
-    ingredients = ingredients.filter(ingredient => ingredient.includes(value.toLowerCase()))
-  }
-  return ingredients.map(ingredient => ingredient[0].toUpperCase() + ingredient.substring(1))
+  let ingredients = []
+  // Get all unique ingredients
+  recipes.forEach(recipe => {
+    ingredients = [...new Set([...ingredients, ...recipe.ingredients.map(item => item.ingredient)])]
+  })
+  return value.length >= 3 ? ingredients.filter(item => isLowerCaseIncluded(item, value)) : ingredients
 }
+
 /**
  * Get Appliances filtered
  * @param {*} main - String searched into main search bar
- * @param {*} value - String to search from input search bar appliances
+ * @param {*} value - String to search from input search bar appliancess
  * @returns Array of String (appliances)
  */
 export const getDevices = (main = '', value = '') => {
